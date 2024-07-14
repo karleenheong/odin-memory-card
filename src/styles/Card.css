@@ -1,0 +1,9 @@
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.gifDiv {
+  width: 100px;
+  height: auto;
+}
