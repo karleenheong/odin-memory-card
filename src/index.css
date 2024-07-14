@@ -4,3 +4,10 @@
   box-sizing: border-box;
   font-family: Verdana, Tahoma, sans-serif;
 }
+
+body {
+  background-color: #000033;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

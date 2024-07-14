@@ -3,19 +3,19 @@
   flex-direction: row;
   justify-content: space-between;
   width: 70vw;
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 .gameName {
   font-size: 2rem;
   margin: 20px;
-  color: navy;
+  color: lightblue;
   text-align: left;
 }
 
 .scoreboardText {
   font-size: 1.5rem;
   margin: 10px;
-  color: maroon;
+  color: whitesmoke;
   text-align: right;
 }
