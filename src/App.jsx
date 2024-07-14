@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className='appArea'>
-      <Header />
+      <Header />  
       <Gameboard />
     </div>
   )

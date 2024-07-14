@@ -3,6 +3,9 @@ import '../styles/Gameboard.css';
 import Card from './Card';
 
 export default function Gameboard() {
+  // const [selectedCard, setSelectedCard] = useState();
+  // let clickedCards = [];
+
   return (
     <div className="gameboard">
       <Card id={0}/>
