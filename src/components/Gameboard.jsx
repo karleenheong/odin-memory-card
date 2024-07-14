@@ -17,21 +17,32 @@ function shuffleNums() {
 }
 
 export default function Gameboard() {
-  // let clickedCards = [];
 
   const [toggle, setToggle] = useState(false);
+  const [clickedCards, setClickedCards] = useState([]);
+  const [score, setScore] = useState(0);
+  const [bestScore, setBestScore] = useState(0);
 
   let nums = shuffleNums();
 
-  const handleClick = () => {
+  const handleClick = (id) => {
+    if(!clickedCards.includes(id)) {
+      setClickedCards([...clickedCards, id]);
+      // console.log(clickedCards);
+      setScore(score + 1);
+      console.log(score);
+    } else {
+      setBestScore(score);
+      setScore(0);
+      setClickedCards([]);
+    }
     setToggle(!toggle);
-    console.log('click');
   }
 
   return (
     <div className="gameboard">
       {nums.map((num) => 
-        <Card id={num} key={num} onClick={handleClick}/>
+        <Card id={num} key={num} onClick={() => handleClick(num)}/>
       )}
     </div>
   );
