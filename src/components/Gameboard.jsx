@@ -1,25 +1,39 @@
+import { useState } from 'react';
 import '../styles/Gameboard.css'
-import '../styles/Gameboard.css';
 import Card from './Card';
 
+function shuffleNums() {
+  let nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+  let currentIndex = nums.length;
+  // While there remain elements to shuffle...
+  while(currentIndex != 0) {
+    // Pick a remaining element...
+    let randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+    // And swap it with the current element.
+    [nums[currentIndex], nums[randomIndex]] = [nums[randomIndex], nums[currentIndex]];
+  }
+  return nums;
+}
+
 export default function Gameboard() {
-  // const [selectedCard, setSelectedCard] = useState();
   // let clickedCards = [];
+
+  const [toggle, setToggle] = useState(false);
+
+  let nums = shuffleNums();
+
+  const handleClick = () => {
+    setToggle(!toggle);
+    console.log('click');
+  }
 
   return (
     <div className="gameboard">
-      <Card id={0}/>
-      <Card id={1}/>
-      <Card id={2}/>
-      <Card id={3}/>
-      <Card id={4}/>
-      <Card id={5}/>
-      <Card id={6}/>
-      <Card id={7}/>
-      <Card id={8}/>
-      <Card id={9}/>
-      <Card id={10}/>
-      <Card id={11}/>
+      {nums.map((num) => 
+        <Card id={num} key={num} onClick={handleClick}/>
+      )}
     </div>
   );
 }
+
