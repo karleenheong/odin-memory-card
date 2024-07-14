@@ -16,12 +16,10 @@ function shuffleNums() {
   return nums;
 }
 
-export default function Gameboard() {
+export default function Gameboard({ score, setScore, bestScore, setBestScore }) {
 
   const [toggle, setToggle] = useState(false);
   const [clickedCards, setClickedCards] = useState([]);
-  const [score, setScore] = useState(0);
-  const [bestScore, setBestScore] = useState(0);
 
   let nums = shuffleNums();
 
@@ -32,7 +30,9 @@ export default function Gameboard() {
       setScore(score + 1);
       console.log(score);
     } else {
-      setBestScore(score);
+      if(score > bestScore) {
+        setBestScore(score);
+      }
       setScore(0);
       setClickedCards([]);
     }
