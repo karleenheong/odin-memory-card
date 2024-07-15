@@ -4,7 +4,7 @@ import '../styles/Card.css';
 
 export default function Card({ id, ...buttonProps }) {
   const [gif, setGif] = useState(null);
-  const gifId = cardData[id].image;
+  const gifId = cardData[id].gifId;
 
   useEffect(() => {
     const fetchData = async() => {
@@ -27,7 +27,7 @@ export default function Card({ id, ...buttonProps }) {
   return (
     <button className="card" {...buttonProps}>
       <div className="gifDiv">
-        <img src={gif}/>
+        <img className="gifImg" src={gif}/>
       </div>
       <h3>{cardData[id].title}</h3>
     </button>

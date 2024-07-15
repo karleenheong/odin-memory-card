@@ -1,50 +1,50 @@
 export const cardData = [{
     id: 0,
     title: 'tornado',
-    image: 'w2Sx1i7rE8dfdyDSAb'
+    gifId: 'w2Sx1i7rE8dfdyDSAb'
   }, {
     id: 1,
     title: 'volcano',
-    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/codeigniter/codeigniter-plain.svg'
+    gifId: 'r5gHt2TCIiHK0'
   }, {
     id: 2,
     title: 'blizzard',
-    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/coffeescript/coffeescript-original.svg'
+    gifId: 'Xi2Xu0MejhsUo'
   }, {
     id: 3,
-    title: 'blizzard',
-    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/coffeescript/coffeescript-original.svg'
+    title: 'hurricane',
+    gifId: 'HmTLatwLWpTQk'
   }, {
     id: 4,
-    title: 'blizzard',
-    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/coffeescript/coffeescript-original.svg'
+    title: 'tsunami',
+    gifId: 'WbH025dAr6so'
   }, {
     id: 5,
-    title: 'blizzard',
-    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/coffeescript/coffeescript-original.svg'
+    title: 'wildfire',
+    gifId: 'NWpDqhCzmRkWh2os4U'
   }, {
     id: 6,
-    title: 'blizzard',
-    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/coffeescript/coffeescript-original.svg'
+    title: 'earthquake',
+    gifId: 'l0HlAJti7DgiZ1H9u'
   }, {
     id: 7,
-    title: 'blizzard',
-    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/coffeescript/coffeescript-original.svg'
+    title: 'drought',
+    gifId: 'WsvHRUQqYb5qpp33SR'
   }, {
     id: 8,
-    title: 'blizzard',
-    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/coffeescript/coffeescript-original.svg'
+    title: 'flood',
+    gifId: 'KYWdVhA36WuRLyiy9H'
   }, {
     id: 9,
-    title: 'blizzard',
-    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/coffeescript/coffeescript-original.svg'
+    title: 'avalanche',
+    gifId: 'ZTjQgJGDiuJZS'
   }, {
     id: 10,
-    title: 'blizzard',
-    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/coffeescript/coffeescript-original.svg'
+    title: 'dust storm',
+    gifId: 'lPNqO3u4p1gewVI4VJ'
   }, {
     id: 11,
-    title: 'blizzard',
-    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/coffeescript/coffeescript-original.svg'
+    title: 'sinkhole',
+    gifId: 'I3QOE8SlXfcju'
   }
 ];
