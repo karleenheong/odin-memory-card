@@ -1,7 +1,7 @@
 export const cardData = [{
     id: 0,
     title: 'tornado',
-    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bun/bun-original.svg'
+    image: 'w2Sx1i7rE8dfdyDSAb'
   }, {
     id: 1,
     title: 'volcano',
